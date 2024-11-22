@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tech Sharmit</title>
+</head>
+
+<body>
+
+    <!-- 
+               Presented By  : Tech Sharmit
+               Topic         : HTML Graphics
+               Note          : Plesae do subscribe Tech Sharmit Youtube Channel for more sessions and code  : https://youtube.com/@techsharmit?feature=shared
+
+    -->
+
+    <h1>HTML By Tech Sharmit</h1>
+
+    <h2>Drawing Line on a Canvas through Javascript</h2>
+
+    <canvas id="Canvas1" width="300px" height="300px" style="border: 5px solid black; background-color: bisque;">
+
+    </canvas>
+
+    <script>
+        var c = document.getElementById("Canvas1");
+        var ctx = c.getContext("2d");
+
+        ctx.moveTo(0, 0);
+        ctx.lineTo(400, 200);
+        ctx.stroke();
+    </script>
+
+
+</body>
+
+</html>
