@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tech Sharmit</title>
+</head>
+
+<body>
+
+    <!-- 
+               Presented By  : Tech Sharmit
+               Topic         : HTML Graphics
+               Note          : Plesae do subscribe Tech Sharmit Youtube Channel for more sessions and code  : https://youtube.com/@techsharmit?feature=shared
+
+    -->
+
+    <h1>HTML By Tech Sharmit</h1>
+
+    <h2>
+        Process to implement following methods:-
+    </h2>
+    <p>
+        1.ctx.lineWidth. <br>
+        2.ctx.fillStyle. <br>
+        3.ctx.strokeStyle. <br>
+    </p>
+
+    <canvas id="Canvas1" width="300px" height="200px" style="border: 5px solid black;">
+
+    </canvas>
+
+    <script>
+        var c = document.getElementById("Canvas1");
+        var ctx = c.getContext("2d");
+        ctx.rect(50, 50, 120, 50);
+        ctx.lineWidth = 10;
+        ctx.strokeStyle = 'blue';
+        ctx.fillStyle = 'red';
+        ctx.fill();
+        ctx.stroke();
+    </script>
+
+</body>
+
+</html>
