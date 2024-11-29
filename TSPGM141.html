@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tech Sharmit</title>
+</head>
+
+<body>
+
+    <!-- 
+               Presented By  : Tech Sharmit
+               Topic         : HTML Graphics
+               Note          : Plesae do subscribe Tech Sharmit Youtube Channel for more sessions and code  : https://youtube.com/@techsharmit?feature=shared
+
+    -->
+
+    <h1>HTML By Tech Sharmit</h1>
+
+    <h2>Outlined Gradient on Canvas API</h2>
+
+    <canvas id="Canvas1" width="600px" height="300px" style="border: 5px solid black;">
+
+    </canvas>
+
+    <script>
+
+        var c = document.getElementById("Canvas1");
+
+        var ctx = c.getContext('2d');
+
+        // Create Linear Gradeient
+
+        const grad = ctx.createLinearGradient(0, 0, 280, 0);
+
+        grad.addColorStop(0, "Red");
+
+        grad.addColorStop(0.5, "yellow");
+
+        grad.addColorStop(1, "DarkBlue");
+
+        //Fill Outlined Rectangle with gradient
+
+        ctx.lineWidth = 15;
+
+        ctx.strokeStyle = grad;
+
+        ctx.strokeRect(10, 10, 280, 130);
+
+    </script>
+</body>
+
+</html>
