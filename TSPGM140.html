@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tech Sharmit</title>
+</head>
+
+<body>
+
+    <!-- 
+               Presented By  : Tech Sharmit
+               Topic         : HTML Graphics
+               Note          : Plesae do subscribe Tech Sharmit Youtube Channel for more sessions and code  : https://youtube.com/@techsharmit?feature=shared
+
+    -->
+
+    <h1>HTML By Tech Sharmit</h1>
+
+    <h2>Diagonal Gradient Effect on Canvas API</h2>
+
+    <canvas id="Canvas1" width="600px" height="300px" style="border: 5px solid black;">
+
+    </canvas>
+
+    <script>
+
+        var c = document.getElementById("Canvas1");
+
+        var ctx = c.getContext("2d");
+
+        // Create Linear gradient (Diagonal Effect)
+
+        const grad = ctx.createLinearGradient(0, 0, 280, 130);
+
+        grad.addColorStop(0, "Red");
+
+        grad.addColorStop(0.5, "Yellow");
+
+        grad.addColorStop(1, "Blue");
+
+        // Fill rectangle with Gradient
+
+        ctx.fillStyle = grad;
+
+        ctx.fillRect(10, 10, 280, 130);
+
+    </script>
+
+
+</body>
+
+</html>
