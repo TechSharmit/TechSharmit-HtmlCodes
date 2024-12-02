@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tech Sharmit</title>
+</head>
+
+<body>
+
+    <!-- 
+               Presented By  : Tech Sharmit
+               Topic         : HTML Graphics
+               Note          : Plesae do subscribe Tech Sharmit Youtube Channel for more sessions and code  : https://youtube.com/@techsharmit?feature=shared
+
+    -->
+
+    <h1>HTML By Tech Sharmit</h1>
+
+    <h2>Process to fill Circle with Gradient on Canvas</h2>
+
+    <canvas id="Canvas1" width="600px" height="300px" style="border: 5px solid black;">
+
+    </canvas>
+
+    <Script>
+
+        var c = document.getElementById("Canvas1");
+
+        var ctx = c.getContext("2d");
+
+        // Create Linear Gradient
+
+        const grad = ctx.createLinearGradient(0, 0, 280, 0);
+
+        grad.addColorStop(0, "lightblue");
+
+        grad.addColorStop(1, "Darkgreen");
+
+        // Fill circle with gradient
+
+        ctx.beginPath();
+
+        ctx.arc(145, 75, 65, 0, 2 * Math.PI);
+
+        ctx.fillStyle = grad;
+
+        ctx.fill();
+
+    </Script>
+
+</html>
