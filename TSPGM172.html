@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tech Sharmit</title>
+</head>
+
+<body>
+
+    <!-- 
+               Presented By  : Tech Sharmit
+               Topic         : HTML Graphics
+               Note          : Plesae do subscribe Tech Sharmit Youtube Channel for more sessions and code  : https://youtube.com/@techsharmit?feature=shared
+
+Attribute	    Description
+href	        The URL to the path to render the text
+lengthAdjust	How to compress or stretch the text to fit the width defined by the textLength attribute. Can be spacing|spacingAndGlyphs. Default is spacing
+method	        How to render the glyphs along the path. Can be align|stretch. Default is align
+spacing	        The space between glyphs. Can be auto|exact. Default is exact
+startOffset	    How far the beginning of the text should be offset from the beginning of the path. Can be a length, percentage or a number
+textLength	    The width of the text along the path. Can be a length, percentage or a number. Default is auto
+
+               -->
+
+    <h1>HTML by Tech Sharmit</h1>
+
+    <h2>SVG Text - textPath</h2>
+
+    <svg height="600" width="1000" style="border: 5px solid black;">
+
+        <path id="lineAC" d="M 330 180 q 150 -250 300 0" stroke="blue" stroke-width="2" fill="none"></path>
+
+        <text style="fill:red; font-size:25px;">
+
+            <textPath href="#lineAC" startoffset="80">The Tech Sharmit Podcast</textPath>
+
+        </text>
+
+    </svg>
+
+</html>
