@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tech Sharmit</title>
+</head>
+
+<body>
+
+    <!-- 
+               Presented By  : Tech Sharmit
+               Topic         : HTML Graphics
+               Note          : Plesae do subscribe Tech Sharmit Youtube Channel for more sessions and code  : https://youtube.com/@techsharmit?feature=shared
+
+Attribute	  Description
+id            The unique id for the marker
+markerHeight  The height of the marker. Default is 3
+markerWidth	  The width of the marker. Default is 3
+refX	      The x position where the marker connects with the vertex. Default is 0
+refY	      The y position where the marker connects with the vertex. Default is 0
+orient	      The orientation of the marker relative to the shape it is attached to. Can be "auto", "auto-start-reverse" or an angle. Default is 0
+
+    -->
+
+    <h1>HTML by Tech Sharmit</h1>
+
+    <h2>Marker Element in SVG</h2>
+
+    <svg height="500" width="1000" style="border: 5px solid black;">
+
+        <!-- Define the markers -->
+
+        <defs>
+            <!-- Circle Marker -->
+            <marker id="circleMarker" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+                <circle cx="5" cy="5" r="4" fill="blue" />
+            </marker>
+
+            <!-- Arrow Marker -->
+
+            <marker id="arrowMarker" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+                <polygon points="0,0 10,5 0,10" fill="red" />
+            </marker>
+        </defs>
+
+        <!-- A line with a circle marker at the start and an arrow marker at the end -->
+
+        <line x1="50" y1="75" x2="250" y2="75" stroke="black" stroke-width="2" marker-start="url(#circleMarker)"
+            marker-end="url(#arrowMarker)" />
+    </svg>
+
+</html>
