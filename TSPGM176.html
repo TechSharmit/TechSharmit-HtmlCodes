@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tech Sharmit</title>
+</head>
+
+<body>
+
+    <!-- 
+               Presented By  : Tech Sharmit
+               Topic         : HTML Graphics
+               Note          : Plesae do subscribe Tech Sharmit Youtube Channel for more sessions and code  : https://youtube.com/@techsharmit?feature=shared
+
+Name	                Description
+<feBlend>	            Combines two graphics together by a certain blending mode
+<feColorMatrix>	        Changes colors based on a transformation matrix
+<feComponentTransfer>	Performs component-wise remapping of data for each pixel. Can adjust brightness, contrast, color balance, etc
+<feComposite>	        Performs combination of two input images pixel-wise in image space using a compositing operation
+<feConvolveMatrix>	    Applies a matrix convolution filter effect (this includes blurring, edge detection, sharpening, embossing and beveling)
+<feDiffuseLighting>	    Lights a graphic by using the alpha channel as a bump map
+<feDisplacementMap>	    Uses pixels values from the graphic from in2 attribute to displace the image from the in attribute
+<feDistantLight>	    Specifies a distant light source to be used inside a lighting filter primitive: <feDiffuseLighting> or <feSpecularLighting>
+<feDropShadow>	        Creates a drop shadow of the graphic
+<feFlood>	            Fills the filter subregion with the color and opacity defined by flood-color and flood-opacity attributes
+<feGaussianBlur>	    Blurs the graphic
+<feImage>	            Gets graphic data from an external source and provides the pixel data as output
+<feMerge>	            Blends input graphic layers (applies filter effects concurrently instead of sequentially)
+<feMergeNode>	        Takes the result of another filter to be processed by its parent <feMerge>
+<feMorphology>	        Erodes or dilates the graphic (for fattening or thinning effects)
+<feOffset>	            Offsets the input graphic
+<fePointLight>	        Specifies a light source that allows creating a point light effect
+<feSpecularLighting>	Lights a source graphic by using the alpha channel as a bump map
+<feSpotLight>	        Specifies a light source that allows creating a spotlight effect
+<feTile>	            Fills a target rectangle with a repeated pattern of an input graphic
+<feTurbulence>        	Creates a graphic with the Perlin turbulence function
+    -->
+
+    <h1>HTML by Tech Sharmit</h1>
+
+    <h2>Filters in SVG</h2>
+
+    <svg height="500" width="1000" style="border: 5px solid black;">
+
+        <!-- Define the filter -->
+
+        <defs>
+            <filter id="shadow-blur" x="0" y="0" width="100%" height="100%">
+
+                <!-- Add a shadow using feDropShadow -->
+
+                <feDropShadow dx="5" dy="5" stdDeviation="4" flood-color="rgba(0,0,0,0.5)"></feDropShadow>
+
+                <!-- Add a blur effect using feGaussianBlur -->
+
+                <feGaussianBlur stdDeviation="30"></feGaussianBlur>
+
+            </filter>
+        </defs>
+
+        <!-- Apply the filter to a rectangle -->
+
+        <rect x="50" y="50" width="200" height="100" fill="Blue" filter="url(#shadow-blur)"> </rect>
+
+    </svg>
+
+</html>
