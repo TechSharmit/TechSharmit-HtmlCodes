@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tech Sharmit</title>
+</head>
+
+<body>
+
+    <!-- 
+               Presented By  : Tech Sharmit
+               Topic         : HTML Graphics
+               Note          : Plesae do subscribe Tech Sharmit Youtube Channel for more sessions and code  : https://youtube.com/@techsharmit?feature=shared
+
+Attribute	      Description
+id	              Required. Defines a unique id for the <linearGradient> element
+x1	              The x position of the starting point of the vector gradient. Default is 0%
+x2	              The x position of the ending point of the vector gradient. Default is 100%
+y1	              The y position of the starting point of the vector gradient. Default is 0%
+y2	              The y position of the ending point of the vector gradient. Default is 0%
+spreadMethod      Defines the spread method of the gradient. Possible values: "pad", "reflect", "repeat". Default is "pad"
+href	          Defines a reference to another <linearGradient> element that will be used as a template
+gradientUnits	  Defines the coordinate system for x1, x2, y1, y2. Possible values: "userSpaceOnUse" and "objectBoundingBox". Default is "objectBoundingBox"
+gradientTransform Defines additional transformation to the gradient coordinate system
+    -->
+
+    <h1>HTML by Tech Sharmit</h1>
+
+    <h2>Linear Gradient Effect in SVG</h2>
+
+    <svg width="1000" height="500" style="border: 5px solid black;">
+
+        <defs>
+
+            <linearGradient id="grad1" x1="0%" x2="100%" y1="100%" y2="0%">
+
+                <stop offset="0%" stop-Color="Yellow"></stop>
+
+                <stop offset="100%" stop-Color="Red"></stop>
+
+            </linearGradient>
+
+        </defs>
+
+        <ellipse cx="100" cy="70" rx="85" yy="55" fill="url(#grad1)"></ellipse>
+
+    </svg>
+
+</html>
