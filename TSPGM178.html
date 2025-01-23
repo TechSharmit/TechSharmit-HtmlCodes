@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tech Sharmit</title>
+</head>
+
+<body>
+
+    <!-- 
+               Presented By  : Tech Sharmit
+               Topic         : HTML Graphics
+               Note          : Plesae do subscribe Tech Sharmit Youtube Channel for more sessions and code  : https://youtube.com/@techsharmit?feature=shared
+
+
+Attribute	Description
+id	            Required. Defines a unique id for the <radialGradient> element
+cx    	        The x position of the end circle of the radial gradient. Default is 50%
+cy	            The y position of the end circle of the radial gradient. Default is 50%
+fr	            The radius of the start circle of the radial gradient. Default is 0%
+fx	            The x position of the start circle of the radial gradient. Default is 50%
+fy	            The y position of the start circle of the radial gradient. Default is 50%
+r	            The radius of the end circle of the radial gradient. Default is 50%
+spreadMethod	Defines the spread method of the gradient. Possible values: "pad", "reflect", "repeat". Default is "pad"
+href	        Defines a reference to another <radialGradient> element that will be used as a template
+gradientUnits	Defines the coordinate system for cx, cy, r, fx, fy, fr. Possible values: "userSpaceOnUse" and "objectBoundingBox". Default is "objectBoundingBox"
+gradientTransform	Defines additional transformation to the gradient coordinate system
+
+               -->
+
+    <h1>HTML by Tech Sharmit</h1>
+
+    <h2>Radial Gradient in SVG</h2>
+
+    <svg width="1000" height="500" style="border:5px solid black">
+
+        <defs>
+
+            <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+
+                <stop offset="0%" stop-color="Red"></stop>
+
+                <stop offset="100%" stop-color="Blue"></stop>
+
+            </radialGradient>
+
+        </defs>
+
+        <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)">
+
+        </ellipse>
+
+    </svg>
+
+</html>
