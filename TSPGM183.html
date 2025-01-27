@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tech Sharmit</title>
+</head>
+
+<body>
+
+    <!-- 
+               Presented By  : Tech Sharmit
+               Topic         : HTML Graphics
+               Note          : Plesae do subscribe Tech Sharmit Youtube Channel for more sessions and code  : https://youtube.com/@techsharmit?feature=shared
+
+    -->
+
+    <h1>HTML by Tech Sharmit</h1>
+
+    <h2>SVG Clipping</h2>
+
+    <svg width="1000" height="500" style="border: 5px solid black;">
+
+        <!-- Define the clipping path -->
+
+        <defs>
+
+            <clippath id="myclip">
+
+                <!-- Define the clipping share (Circle) -->
+
+                <circle cx="100" cy="100" r="50"></circle>
+
+            </clippath>
+
+        </defs>
+
+        <!-- Background rectangle -->
+
+        <rect width="200" height="200" fill="lightblue"></rect>
+
+        <!-- Target element (a bigger rectangle) -->
+
+        <rect width="200" height="200" fill="orange" clip-path="url(#myclip)"></rect>
+
+    </svg>
+
+</html>
