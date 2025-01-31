@@ -16,17 +16,31 @@
 
     <h1>HTML by Tech Sharmit</h1>
 
-    <h2>Transform Function in SVG</h2>
-
-    <h3>1.Rotate() Function</h3>
-
-    <h3>2.SkewX() Function</h3>
-
-    <h3>3.SkewY() Function</h3>
+    <h2>SVG Clipping</h2>
 
     <svg width="1000" height="500" style="border: 5px solid black;">
 
-        <rect x="50" y="5" width="40" height="40" fill="Blue" transform="skewY(60)"></rect>
+        <!-- Define the clipping path -->
+
+        <defs>
+
+            <clippath id="myclip">
+
+                <!-- Define the clipping share (Circle) -->
+
+                <circle cx="100" cy="100" r="50"></circle>
+
+            </clippath>
+
+        </defs>
+
+        <!-- Background rectangle -->
+
+        <rect width="200" height="200" fill="lightblue"></rect>
+
+        <!-- Target element (a bigger rectangle) -->
+
+        <rect width="200" height="200" fill="orange" clip-path="url(#myclip)"></rect>
 
     </svg>
 
