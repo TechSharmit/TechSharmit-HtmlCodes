@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tech Sharmit</title>
+</head>
+
+<body>
+
+    <!-- 
+               Presented By  : Tech Sharmit
+               Topic         : HTML Graphics
+               Note          : Plesae do subscribe Tech Sharmit Youtube Channel for more sessions and code  : https://youtube.com/@techsharmit?feature=shared
+
+    -->
+
+    <h1>HTML by Tech Sharmit</h1>
+
+    <h2>Svg with JavaScript</h2>
+
+    <svg width="1000" height="500" style="border: 5px solid black;">
+
+        <!-- Draw a circle -->
+
+        <circle id="Circle1" cx="50" cy="50" r="25" style="fill:red;"></circle>
+
+    </svg>
+
+    <!-- Create button -->
+
+    <input type="button" value="Change Radius" onclick="ChangeRadius()" />
+
+    <!-- Create function using JavaScript -->
+
+    <script>
+
+        function ChangeRadius() {
+
+            document.getElementById("Circle1").setAttribute("r", "50");
+        }
+
+    </script>
+
+</body>
+
+</html>
